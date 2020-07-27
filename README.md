@@ -19,6 +19,10 @@ Choose an Item & Quantity and Add it to the Cart page. There will be a Home page
 ## Prep #4 Submission Material:
 **User Story** [Document](https://docs.google.com/document/d/18TixREggzuGIxyQyo6WZcehCL3ZEarPad4qJFKoxNvk/edit)  
 
+**Domain Modeling** Image
+[Domain Modeling](https://drive.google.com/file/d/1JQ8KyfjwY1bw64PBOek62VWnh2Blf4zQ/view?usp=sharing)
+
 Group Dragon **[Canvas Announcemnt Page](https://canvas.instructure.com/groups/592839/announcements)** w/Links
 
-**Wire Frames** were done with a [project space](https://balsamiq.cloud/invite/VTFzyYirkzXaMkZxLIH71OcuXtdE7N0p4dIWDlNFeb82) on Basalmiq *(Note: Invitation to view has an experiation, if you need access, just contact a team member)*
+**Wire Frames** were done with Basalmiq, below are screenshots for it:
+
