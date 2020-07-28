@@ -3,7 +3,7 @@
 // Global vars
 
 
-/* Create template object for RawMaterial coffee and Tea products*/
+/* Created template object for RawMaterial coffee and Tea products with params */
 
 function RawMaterialItem(name, img, price) {
   this.name = name;
@@ -17,6 +17,7 @@ function RawMaterialItem(name, img, price) {
 
 
 /*********************** ALL CART RELATED CODE *************************************************/
+
 // Add item to cart
 // Add selected item to cart
 // Add storage
