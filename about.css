@@ -1,0 +1,85 @@
+/* * {
+  border: 2px solid blue;
+} */
+
+body {
+  padding: 20px;
+  }
+
+  main {
+    height: 600px;
+    width: 960;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 35px 1fr 1fr;
+    row-gap: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+  }
+
+  article {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #cafeImage {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 0 auto;
+  }
+
+  article > p {
+    text-indent: 2em;
+    margin-bottom: 15px;
+  }
+
+  #John {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 0 auto;
+  }
+
+  #Riva {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 0 auto;
+  }
+
+  #Mike {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 0 auto;
+  }
+
+  #Tif {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 0 auto;
+  }
+
+  
