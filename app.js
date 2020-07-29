@@ -5,9 +5,10 @@
 
 /* Created template object for RawMaterial coffee and Tea products with params */
 
-function RawMaterialItem(name, img, price) {
+function RawMaterialItem(name, img, description, price) {
   this.name = name;
   this.img = img;
+  this.description = description;
   this.price = price;
 }
 //limit quanitity input in form on HTML
@@ -19,7 +20,7 @@ function RawMaterialItem(name, img, price) {
 /*********************** ALL CART RELATED CODE *************************************************/
 
 // Add item to cart
-// Add selected item to cart
+// Add selected item to cart // part of event listener
 // Add storage
 // Add updateCart function
 // Add updateTotal function
@@ -40,10 +41,11 @@ function Cart(cartItem, price) {
 //cartitem constructor
 // the instance of the New cart item will be included in local storage section
 // We will then use the push method to add new item into cart (this line of code will also be in storage section)
-var CartItem = function (name, price, quantity) {
+var CartItem = function (name, src, price, quantity) {
   this.name = name;
   this.quantity = quantity;
   this.price = price;
+  this.src = src;
 };
 
 
@@ -58,6 +60,20 @@ Cart.prototype.addItems = function(name, price, quantity) {
 
 
 // Method for rendering product in cart
-RawMaterialItem.prototype.renderProductToCart = function() {
-var target = document.getElementById('item');
-}
+Cart.prototype.renderProductToCart = function() {
+  var target = document.getElementById('cartItemList');
+  // for loop here to cycle through this.cartitems
+  for(var i = 0; i <this.cartItems.length; i++) {
+    var cartItemHome = document.createElement('div');
+    var itemImage = document.createElement('img');
+    itemImage.src = this.cartItems[i].src;
+    itemImage.alt = this.cartItems[i].name;
+    cartItemHome.appendChild(itemImage);
+    var displayedName = document.createElement('p');
+    displayedName.textContent = this.cartItems[i].name;
+    cartItemHome.appendChild(displayedName);
+    target.appendChild(cartItemHome);
+  }
+};
+// will need to call render product
+//renderProductToCart();
