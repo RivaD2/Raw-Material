@@ -4,6 +4,7 @@
 
 body {
   padding: 20px;
+  background-color: lightgray;
   }
 
   main {
@@ -56,6 +57,7 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
     margin: 0 auto;
+    text-align: center;
   }
 
   #Riva {
@@ -64,6 +66,7 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
     margin: 0 auto;
+    text-align: center;
   }
 
   #Mike {
@@ -72,6 +75,7 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
     margin: 0 auto;
+    text-align: center;
   }
 
   #Tif {
@@ -80,6 +84,7 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
     margin: 0 auto;
+    text-align: center;
   }
 
   
