@@ -75,6 +75,11 @@ Cart.prototype.renderCart = function() {
   var target = document.getElementById('cartItemList');
   // for loop here to cycle through this.cartitems
   for(var i = 0; i <this.cartItems.length; i++) {
+    // this will calculate subtotal of items in cart and produce a grandtotal
+    // at the end of the for loop subtotal is added in to the cartItems row so it will display with product
+    // we will see image, name, price, quantity, subototal and then total at the bottom
+    var subtotal = this.cartItems[i].quantity * this.cartItems[i].price;
+    this.total = this.total + subtotal;
     var cartItemHome = document.createElement('tr');
     var displayedImage = document.createElement('td');
     var itemImage = document.createElement('img');
@@ -91,8 +96,16 @@ Cart.prototype.renderCart = function() {
     var displayedQuantity = document.createElement('td');
     displayedQuantity.textContent = this.cartItems[i].quantity;
     cartItemHome.appendChild(displayedQuantity);
+    var subtotalsRowData = document.createElement('td');
+    subtotalsRowData.textContent = subtotal;
+    cartItemHome.appendChild(subtotalsRowData);
     target.appendChild(cartItemHome);
   }
+  var totalRow = document.createElement('tr');
+  var totalRowData = document.createElement('td');
+  totalRow.appendChild(totalRowData);
+  target.appendChild(totalRow);
+  totalRowData.textContent = this.total;
 };
 // will need to call render product
 
@@ -104,6 +117,17 @@ userCart.addItem('coffeeOne', 100, 3);
 userCart.addItem('greenTea',50,1);
 userCart.renderCart();
 
-//PM TUES TASKS
+
+
+
+//TUES TASKS
 // I worked on adding table rows using loop
 // instianted istances of object so that the renderCart had something to render
+// Added in final totals row
+// did math (price * quantity) to produce subtotal
+// did math to produce grand total
+//appended total to totals row, 
+// created a subtotals row and td
+// add subtotal as content
+//append to the the subtotal td
+
