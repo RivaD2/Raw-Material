@@ -19,6 +19,8 @@ main {
 #topImgAndTitleSection img {
   width: 100%;
   text-align: center;
+  height: 500px;
+  opacity: 0.7;
 }
 
 #topImgAndTitleSection h1 {
@@ -33,11 +35,11 @@ main {
 }
 
 #topImgAndTitleSection p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-style: italic;
   margin: 0;
   position: absolute;
-  bottom: 195px;
+  bottom: 240px;
   left: 125px;
   color: white;
 }
@@ -75,6 +77,7 @@ main {
 /* Items of .card Container */
 .prodNameDiv {
   align-self: center;
+  padding: 10px;
 }
 
 .numDiv {
