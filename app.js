@@ -5,12 +5,12 @@
 
 /* Created template object for RawMaterial coffee and Tea products with params */
 
-function RawMaterialItem(name, img, description, price) {
-  this.name = name;
-  this.img = img;
-  this.description = description;
-  this.price = price;
-}
+// function RawMaterialItem(name, img, description, price) {
+//   this.name = name;
+//   this.img = img;
+//   this.description = description;
+//   this.price = price;
+//}
 //limit quanitity input in form on HTML
 
 
@@ -19,32 +19,39 @@ function RawMaterialItem(name, img, description, price) {
 
 /*********************** ALL CART RELATED CODE *************************************************/
 
-// Add item to cart
-// Fetch cart items from local storage
-   //- add each item to cart
-  // - when cart is rendered, subtotal for each item needs to be calculated
-  // - At end of table, add in final row with total
-// Add updateCart function
-// Add updateTotal function
-// Will need to write method for rendering product in cart
-// Remove Items from Cart
+// Add item to cart (DONE)
+/*TODO:Fetch cart items from local storage
+      - pull local storage items and add each item to cart
+      - JSON Parse to take items out of local storage
+      - GetItems
+*/
+
+
+// Will need to write method for rendering product in cart (DONE)
+//TODO: Remove Items from Cart (use fake items)
+
+/*TODO:Add last table row to Cart that has grandtotal
+    -will have to do some math here for totals row (keep in mind the cookies project, price * quantity = subtotal)
+    - Add all subtotals to variable
+    - Do all math in the lop where price and quantity exist*/
 
 
 //Ask Mike to add this id cartItemList to table
 //Ask Mike to add th's for first row (product, quantity, price, total)
-// Ask Mike to move input out of table 
+// Ask Mike to move input out of table
 
 
 // cart constructor
 function Cart() {
   // an array of cartitem instances
   this.cartItems = [];
-  this.price = 0;
+  this.total = 0; // the loop adds subtotals to grandtotal
 }
 
 
 //cartitem constructor
-// the instance of the New cart item will be included in local storage section
+// the instance of the New cart item will be included in local storage section (we can save props or instance in LS)
+
 // We will then use the push method to add new item into cart (this line of code will also be in storage section)
 var CartItem = function (name, src, price, quantity) {
   this.name = name;
@@ -98,5 +105,5 @@ userCart.addItem('greenTea',50,1);
 userCart.renderCart();
 
 //PM TUES TASKS
-// I worked on adding table rows 
+// I worked on adding table rows using loop
 // instianted istances of object so that the renderCart had something to render
