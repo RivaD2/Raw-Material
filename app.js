@@ -120,7 +120,8 @@ userCart.renderCart();
 
 
 
-//TUES TASKS
+//WED TASKS COMPLETED
+//instantiated object at bottom so that renderCart had something to render
 // I worked on adding table rows using loop
 // instianted istances of object so that the renderCart had something to render
 // Added in final totals row
