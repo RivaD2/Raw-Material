@@ -63,9 +63,9 @@ var CartItem = function (name, src, price, quantity) {
 
 // Created a new cart item and then push it into CartItems prop
 // the three params are what is needed to add item to cart
-Cart.prototype.addItem = function(name, price, quantity) {
+Cart.prototype.addItem = function(name, src,price, quantity) {
   console.log('items are added to cart');
-  var item = new CartItem(name, price, quantity);
+  var item = new CartItem(name, src,price, quantity);
   this.cartItems.push(item);
 };
 
@@ -111,11 +111,7 @@ Cart.prototype.renderCart = function() {
 
 
 
-// when we call addItem, a new object will be created
-var userCart = new Cart();
-userCart.addItem('coffeeOne', 100, 3);
-userCart.addItem('greenTea',50,1);
-userCart.renderCart();
+
 
 
 
