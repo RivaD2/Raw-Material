@@ -130,3 +130,4 @@ userCart.renderCart();
 // created a subtotals row and td
 // add subtotal as content
 //append to the the subtotal td
+
