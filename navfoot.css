@@ -1,34 +1,39 @@
 
 #Raw {
-  padding-left: 120px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+
 }
 
 td {
   padding: 20px;
 }
 
-#upper-nav-links {
-position: absolute;
-right: 320px;
-top: 5px;
+#upper-nav-links li {
+position: relative;
+left: 1150px;
+top: 65px;
+
+
 }
 
 #icons {
-margin-left: 75px;
+margin-left: 185px;
 padding: 25px;
 
 
 }
 
  #logo {
-  position: absolute;
-  top: 120px;
+  position: relative;
+  bottom: 150px;
   left: 660px;
 }
 
-section {
-  position: absolute;
-  top: 100px;
-  right: 100px;
+#lower-links {
+  position: relative;
+  bottom: 260px;
+  left: 1000px;
 
 }
