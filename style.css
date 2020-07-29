@@ -1,0 +1,115 @@
+
+body {
+  background-color: lightgray;
+}
+
+main {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* Banner Img Section @ Top of Page */
+#topImgAndTitleSection {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 110px;
+  position: relative;
+}
+
+#topImgAndTitleSection img {
+  width: 100%;
+  text-align: center;
+}
+
+#topImgAndTitleSection h1 {
+  font-weight: bold;
+  font-size: 10rem;
+  margin: 0;
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+}
+
+#topImgAndTitleSection p {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 0;
+  position: absolute;
+  bottom: 195px;
+  left: 125px;
+  color: white;
+}
+
+
+/* Tea Section  */
+#teaSection {
+  height: 600px;
+}
+
+.teaRow {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Coffee Section */
+#coffeeSection {
+  height: 600px;
+}
+
+.coffeeRow {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/* .card CONTAINER */
+.card {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Items of .card Container */
+.prodNameDiv {
+  align-self: center;
+}
+
+.numDiv {
+  align-self: center;
+}
+
+.btnDiv {
+  align-self: center;
+}
+
+
+/* Generic styling */
+.productImg {
+  width: 250px;
+  height: 250px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 4.5rem;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+button {
+  height: 30px;
+  width: 160px;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: slategray;
+}
+
+#qty {
+  margin-bottom: 12px;;
+}
