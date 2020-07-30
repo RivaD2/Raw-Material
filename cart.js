@@ -74,6 +74,7 @@ Cart.prototype.renderCart = function() {
     var itemImage = document.createElement('img');
     itemImage.src = this.cartItems[i].src;
     itemImage.alt = this.cartItems[i].name;
+    // added class to itemImage so we can style images on cart.html
     itemImage.setAttribute('class', 'cartImage');
     displayedImage.appendChild(itemImage);
     cartItemHome.appendChild(displayedImage);
@@ -102,7 +103,7 @@ Cart.prototype.renderCart = function() {
 function initializeCart() {
   // to initialize the cart, added instance of object
   theCart = new Cart();
-  // used code from Busmall to loop through items from LS
+  // used code from Busmall as template to loop through items from LS
   var storedProducts = localStorage.getItem('rawMaterials');
   if(storedProducts !== null) {
     var parsedProducts = JSON.parse(storedProducts); // extracted properties of object so we can send to constructor
