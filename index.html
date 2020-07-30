@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="navfoot.css"> -->
+  <link rel="stylesheet" href="navfoot.css">
 
   <title>Raw Material</title>
 
@@ -18,7 +18,7 @@
       
   <nav>
     <ul>
-    <table id="upper-nav-links" style="width:8%"> 
+    <table id="upper-nav-links" style="width:0%"> 
       <tr>
         <td><li><a href="about.html">About Us</a></li></td>
         <td><li><a href="">Products</a></li></td>
@@ -48,16 +48,19 @@
         <p>Raw Puerh Tea</p>
       </div>
       <div class="numDiv">
-        <span>$8.00 | </span>
-        <label for="qty">Quantity:</label>
-        <select name="qty" id="qty">
-          <option value="one">1 oz.</option>
-          <option value="two">2 oz.</option>
-          <option value="three">3 oz.</option>
-        </select>
-      </div>
-      <div class="btnDiv">
-        <button type="button">Add to Cart</button>
+        <form id="tea-1">
+          <span>$8.00 | </span>
+          <label for="qty">Quantity:</label>
+          <select name="qty" id="qty">
+            <option value="1">1 oz.</option>
+            <option value="2">2 oz.</option>
+            <option value="3">3 oz.</option>
+          </select>
+          <input type="hidden" name="name" value="Raw Puerh Tea">
+          <input type="hidden" name="price" value="8">
+          <input type="hidden" name="src" value="img/tea_1.jpg">
+          <button type="submit">Add to Cart</button>
+        </form>
       </div>
     </div>
 
@@ -67,16 +70,19 @@
         <p>Dragon Pearl Oolong Tea</p>
       </div>
       <div class="numDiv">
-        <span>$10.00 | </span>
-        <label for="qty">Quantity:</label>
-        <select name="qty" id="qty">
-          <option value="one">1 oz.</option>
-          <option value="two">2 oz.</option>
-          <option value="three">3 oz.</option>
-        </select>
-      </div>
-      <div class="btnDiv">
-        <button type="button">Add to Cart</button>
+        <form id="tea-2">
+          <span>$10.00 | </span>
+          <label for="qty">Quantity:</label>
+          <select name="qty" id="qty">
+            <option value="1">1 oz.</option>
+            <option value="2">2 oz.</option>
+            <option value="3">3 oz.</option>
+          </select>
+          <input type="hidden" name="name" value="Dragon Pearl Oolong Tea">
+          <input type="hidden" name="price" value="10">
+          <input type="hidden" name="src" value="img/tea_2.jpg">
+          <button type="submit">Add to Cart</button>
+        </form>
       </div>
     </div>
 
@@ -86,16 +92,19 @@
         <p>Old Tribute White Tea</p>
       </div>
       <div class="numDiv">
-        <span>$20.00 | </span>
-        <label for="qty">Quantity:</label>
-        <select name="qty" id="qty">
-          <option value="one">1 oz.</option>
-          <option value="two">2 oz.</option>
-          <option value="three">3 oz.</option>
-        </select>
-      </div>
-      <div class="btnDiv">
-        <button type="button">Add to Cart</button>
+        <form id="tea-3">
+          <span>$20.00 | </span>
+          <label for="qty">Quantity:</label>
+          <select name="qty" id="qty">
+            <option value="1">1 oz.</option>
+            <option value="2">2 oz.</option>
+            <option value="3">3 oz.</option>
+          </select>
+          <input type="hidden" name="name" value="Old Tribute White Tea">
+          <input type="hidden" name="price" value="20">
+          <input type="hidden" name="src" value="img/tea_3.jpg">
+          <button type="submit">Add to Cart</button>
+        </form>
       </div>
     </div>
 
@@ -105,16 +114,19 @@
         <p>Bi Luo Chun Green Tea</p>
       </div>
       <div class="numDiv">
-        <span>$10.00 | </span>
-        <label for="qty">Quantity:</label>
-        <select name="qty" id="qty">
-          <option value="one">1 oz.</option>
-          <option value="two">2 oz.</option>
-          <option value="three">3 oz.</option>
-        </select>
-      </div>
-      <div class="btnDiv">
-        <button type="button">Add to Cart</button>
+        <form id="tea-4">
+          <span>$10.00 | </span>
+          <label for="qty">Quantity:</label>
+          <select name="qty" id="qty">
+            <option value="1">1 oz.</option>
+            <option value="2">2 oz.</option>
+            <option value="3">3 oz.</option>
+          </select>
+          <input type="hidden" name="name" value="Bi Luo Chun Green Tea">
+          <input type="hidden" name="price" value="10">
+          <input type="hidden" name="src" value="img/tea_4.jpg">
+          <button type="submit">Add to Cart</button>
+        </form>
       </div>
     </div>
   </div>
@@ -128,19 +140,22 @@
     <div class="card">
       <img class="productImg" src="img/coffee_1.jpg" alt="coffee_1">
       <div class="prodNameDiv">
-        <p>Organic Columbia dark Roast</p>
+        <p>Organic Columbia Dark Roast</p>
       </div>
       <div class="numDiv">
-        <span>$5.00 | </span>
-        <label for="qty">Quantity:</label>
-        <select name="qty" id="qty">
-          <option value="one">1 oz.</option>
-          <option value="two">2 oz.</option>
-          <option value="three">3 oz.</option>
-        </select>
-      </div>
-      <div class="btnDiv">
-        <button type="button">Add to Cart</button>
+        <form id="coffee-1">
+          <span>$5.00 | </span>
+          <label for="qty">Quantity:</label>
+          <select name="qty" id="qty">
+            <option value="1">1 oz.</option>
+            <option value="2">2 oz.</option>
+            <option value="3">3 oz.</option>
+          </select>
+          <input type="hidden" name="name" value="Organic Columbia Dark Roast">
+          <input type="hidden" name="price" value="5">
+          <input type="hidden" name="src" value="img/coffee_1.jpg">
+          <button type="submit">Add to Cart</button>
+        </form>
       </div>
     </div>
 
@@ -150,16 +165,19 @@
         <p>Organic Ethiopia Medium Roast</p>
       </div>
       <div class="numDiv">
-        <span>$10.00 | </span>
-        <label for="qty">Quantity:</label>
-        <select name="qty" id="qty">
-          <option value="one">1 oz.</option>
-          <option value="two">2 oz.</option>
-          <option value="three">3 oz.</option>
-        </select>
-      </div>
-      <div class="btnDiv">
-        <button type="button">Add to Cart</button>
+        <form id="coffee-2">
+          <span>$10.00 | </span>
+          <label for="qty">Quantity:</label>
+          <select name="qty" id="qty">
+            <option value="1">1 oz.</option>
+            <option value="2">2 oz.</option>
+            <option value="3">3 oz.</option>
+          </select>
+          <input type="hidden" name="name" value="Organic Ethiopia Medium Roast">
+          <input type="hidden" name="price" value="10">
+          <input type="hidden" name="src" value="img/coffee_2.jpg">
+          <button type="submit">Add to Cart</button>
+        </form>
       </div>
     </div>
 
@@ -169,17 +187,20 @@
         <p>Organic French Roast</p>
       </div>
       <div class="numDiv">
-        <span>$7.00 | </span>
-        <label for="qty">Quantity:</label>
-        <select name="qty" id="qty">
-          <option value="one">1 oz.</option>
-          <option value="two">2 oz.</option>
-          <option value="three">3 oz.</option>
-        </select>
+        <form id="coffee-3">
+          <span>$7.00 | </span>
+          <label for="qty">Quantity:</label>
+          <select name="qty" id="qty">
+            <option value="1">1 oz.</option>
+            <option value="2">2 oz.</option>
+            <option value="3">3 oz.</option>
+          </select>
+          <input type="hidden" name="name" value="Organic French Roast">
+          <input type="hidden" name="price" value="7">
+          <input type="hidden" name="src" value="img/coffee_3.jpg">
+          <button type="submit">Add to Cart</button>
+        </form>
       </div>
-      <div class="btnDiv">
-        <button type="button">Add to Cart</button>
-      </div>    
     </div>
 
     <div class="card">
@@ -188,16 +209,19 @@
         <p>Organic House Blend Light Roast</p>
       </div>
       <div class="numDiv">
-        <span>$10.00 | </span>
-        <label for="qty">Quantity:</label>
-        <select name="qty" id="qty">
-          <option value="one">1 oz.</option>
-          <option value="two">2 oz.</option>
-          <option value="three">3 oz.</option>
-        </select>
-      </div>
-      <div class="btnDiv">
-        <button type="button">Add to Cart</button>
+        <form id="coffee-4">
+          <span>$10.00 | </span>
+          <label for="qty">Quantity:</label>
+          <select name="qty" id="qty">
+            <option value="1">1 oz.</option>
+            <option value="2">2 oz.</option>
+            <option value="3">3 oz.</option>
+          </select>
+          <input type="hidden" name="name" value="Organic House Blend Light Roast">
+          <input type="hidden" name="price" value="10">
+          <input type="hidden" name="src" value="img/coffee_4.jpg">
+          <button type="submit">Add to Cart</button>
+        </form>
       </div>
     </div>
   </div>
