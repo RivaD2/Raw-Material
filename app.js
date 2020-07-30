@@ -1,6 +1,5 @@
 'use strict';
 
-//in index.html link cart.js first before app.js
 
 var rawMaterialArray = [];
 

@@ -3,7 +3,7 @@
 /*********************** ALL CART RELATED CODE *************************************************/
 
 // Add item to cart (DONE)
-/*TODO:Fetch cart items from local storage
+/*Fetch cart items from local storage (DONE)
       - pull local storage items and add each item to cart
       - JSON Parse to take items out of local storage
       - GetItems
@@ -11,7 +11,7 @@
 
 
 // Will need to write method for rendering product in cart (DONE)
-//TODO: Remove Items from Cart (use fake items)
+//TODO: Remove Items from Cart
 
 /*Add last table row to Cart that has grandtotal (DONE)
     -will have to do some math here for totals row (keep in mind the cookies project, price * quantity = subtotal)
@@ -19,8 +19,7 @@
     - Do all math in the lop where price and quantity exist*/
 
 
-//Ask Mike to add this id cartItemList to table
-//Ask Mike to add th's for first row (product, quantity, price, total)
+//Ask Mike to add this id cartItemList to table TODO:
 // Ask Mike to move input out of table
 
 // Global vars
@@ -39,7 +38,7 @@ function Cart() {
 //cartitem constructor
 // the instance of the New cart item will be included in local storage section (we can save props or instance in LS)
 
-// We will then use the push method to add new item into cart (this line of code will also be in storage section)
+// Used the push method to add new item into cart 
 var CartItem = function (name, src, price, quantity) {
   this.name = name;
   this.quantity = quantity;
