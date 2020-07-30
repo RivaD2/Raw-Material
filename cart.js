@@ -11,7 +11,7 @@
 
 
 // Will need to write method for rendering product in cart (DONE)
-//TODO: Remove Items from Cart
+// Remove Items from Cart
 
 /*Add last table row to Cart that has grandtotal (DONE)
     -will have to do some math here for totals row (keep in mind the cookies project, price * quantity = subtotal)
@@ -38,7 +38,7 @@ function Cart() {
 //cartitem constructor
 // the instance of the New cart item will be included in local storage section (we can save props or instance in LS)
 
-// Used the push method to add new item into cart 
+// Used the push method to add new item into cart
 var CartItem = function (name, src, price, quantity) {
   this.name = name;
   this.quantity = quantity;
@@ -144,7 +144,7 @@ initializeCart();
 // copied from app to prevent adding app.js to html to prevent issues for me to use in remove product from cart function
 function saveToLocalStorage(productDataArray) {
   var rawMaterialArrayString = JSON.stringify(productDataArray);
-  localStorage.setItem('rawMaterials', rawMaterialArrayString); 
+  localStorage.setItem('rawMaterials', rawMaterialArrayString);
   console.log(productDataArray.length + ' items in Cart'); // the number of items in the cart is here
 }
 
