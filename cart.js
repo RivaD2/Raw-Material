@@ -56,6 +56,16 @@ Cart.prototype.addItem = function(name, src,price, quantity) {
 };
 
 
+Cart.prototype.removeItem = function(name) {
+  for (var i = 0; i < this.cartItems.length; i++) {
+    if (this.cartItems[i].name === name) {
+      this.cartItems.splice(i, 1);
+      break;
+    }
+  }
+};
+
+
 // Method for rendering product in cart
 Cart.prototype.renderCart = function() {
   var target = document.getElementById('cartItemList');
@@ -73,6 +83,7 @@ Cart.prototype.renderCart = function() {
     var itemImage = document.createElement('img');
     itemImage.src = this.cartItems[i].src;
     itemImage.alt = this.cartItems[i].name;
+    
     // added class to itemImage so we can style images on cart.html
     itemImage.setAttribute('class', 'cartImage');
     displayedImage.appendChild(itemImage);
@@ -89,8 +100,18 @@ Cart.prototype.renderCart = function() {
     var subtotalsRowData = document.createElement('td');
     subtotalsRowData.textContent = toDollars(subtotal);
     cartItemHome.appendChild(subtotalsRowData);
+    
+    var removeBtnCell = document.createElement('td');
+    var removeBtnInput = document.createElement('input');
+    removeBtnInput.value = 'Remove';
+    removeBtnInput.type = 'submit';
+    removeBtnCell.appendChild(removeBtnInput);
+    cartItemHome.appendChild(removeBtnCell);
+    removeBtnInput.addEventListener('click', removeProductFromCart);
+    
     target.appendChild(cartItemHome);
   }
+
   var totalRow = document.createElement('tr');
   var totalRowData = document.createElement('td');
   totalRowData.textContent = toDollars(this.total);
@@ -123,10 +144,29 @@ function initializeCart() {
 }
 initializeCart();
 
+// copied from app to prevent adding app.js to html to prevent issues for me to use in remove product from cart function
+function saveToLocalStorage(productDataArray) {
+  var rawMaterialArrayString = JSON.stringify(productDataArray);
+  localStorage.setItem('rawMaterials', rawMaterialArrayString); 
+  console.log(productDataArray.length + ' items in Cart'); // the number of items in the cart is here
+};
+
 
 function toDollars(amount) {
   var string = '$' + amount + '.00';
   console.log(string);
   return string;
-}
+};
+
+
+function removeProductFromCart(event) {
+  var removeBtnTarget = event.target;
+  var parentTR = removeBtnTarget.closest('tr');
+  var name = parentTR.children[1].textContent;
+  theCart.removeItem(name);
+  saveToLocalStorage(theCart.cartItems);
+  theCart.renderCart();
+};
+
+
 
