@@ -4,6 +4,7 @@
 
 body {
   padding: 20px;
+  background-color: lightgray;
   }
 
   main {
@@ -13,6 +14,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 35px 1fr 1fr;
     row-gap: 20px;
+    margin-bottom: 200px;
   }
 
   h1 {
@@ -30,6 +32,10 @@ body {
     font-weight: bold;
   }
 
+  article > h3 {
+    margin-bottom: 20px;
+  }
+
   article {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -43,6 +49,7 @@ body {
     grid-row-start: 2;
     grid-row-end: 3;
     margin: 0 auto;
+    border: solid black 2px;
   }
 
   article > p {
@@ -56,6 +63,7 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
     margin: 0 auto;
+    text-align: center;
   }
 
   #Riva {
@@ -64,6 +72,7 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
     margin: 0 auto;
+    text-align: center;
   }
 
   #Mike {
@@ -72,6 +81,7 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
     margin: 0 auto;
+    text-align: center;
   }
 
   #Tif {
@@ -80,6 +90,12 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
     margin: 0 auto;
+    text-align: center;
   }
 
+  .bio {
+    width: 200px;
+    height: 200px;
+    border: solid black 2px;
+  }
   

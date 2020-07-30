@@ -29,3 +29,5 @@ Group Dragon **[Canvas Announcemnt Page](https://canvas.instructure.com/groups/5
 ![cart](/img/cart_wireframe.png)
 
 Social media icons provided by: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.publicdomainpictures.net%2Fen%2Fview-image.php%3Fimage%3D253469%26picture%3Dnetworking-social-media-icons&psig=AOvVaw1HzgoiGBR0wQ5bCgQyLn8k&ust=1596041459008000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCOCQufyz8OoCFQAAAAAdAAAAABAJ
+
+Stock images courtesy of Unsplash (http://www.unsplash.com)
