@@ -1,38 +1,90 @@
-
-#Raw {
+#Raw a {
   position: relative;
-  top: 80px;
-  left: 100px;
-  width: 100px;
+  top: 60px;
+  left: 90px;
+  width: 220px;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
 }
 
 td {
   padding: 20px;
 }
 
-#upper-nav-links li {
+html nav #upper-nav-links {
 position: relative;
-left: 1150px;
-top: 45px;
+left: 950px;
+top: 15px;
+text-decoration: none;
+font-size: 1.5rem;
+background-color: rgb(121, 119, 119);
+color: white;
 
+}
+
+footer {
+  background-color: rgb(121, 119, 119);
+  height: 200px;
+
+
+}
+#lower-links a{
+  color: white;
 }
 
 #icons {
-margin-left: 185px;
 padding: 25px;
+position: relative;
+left: 75px;
+border-radius: 50%;
 
 
 }
 
- #logo {
+ #logo img{
+  border-radius: 50%;
   position: relative;
   bottom: 150px;
   left: 660px;
 }
 
-#lower-links {
+#lower-links a{
   position: relative;
   bottom: 260px;
   left: 1000px;
+  text-decoration: none;
+}
 
+
+html nav {
+  overflow: hidden;
+}
+
+html nav, a {
+  background-color: #797777;
+  color: rgb(33, 30, 30);
+  width: auto;
+  height: 90px;
+  overflow: hidden;
+}
+
+nav > ul > li {
+  line-height: 90px;
+}
+
+html nav a {
+  background-color: rgb(121, 119, 119);
+  color: white;
+  width: auto;
+  height: 90px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+  /* padding: 20px 30px 10px 30px; */
+  text-decoration: none;
+  font-size: 1.5rem;
 }
