@@ -87,15 +87,16 @@ Cart.prototype.renderCart = function() {
     displayedQuantity.textContent = this.cartItems[i].quantity;
     cartItemHome.appendChild(displayedQuantity);
     var subtotalsRowData = document.createElement('td');
-    subtotalsRowData.textContent = subtotal;
+    subtotalsRowData.textContent = toDollars(subtotal);
     cartItemHome.appendChild(subtotalsRowData);
     target.appendChild(cartItemHome);
   }
   var totalRow = document.createElement('tr');
   var totalRowData = document.createElement('td');
+  totalRowData.textContent = toDollars(this.total);
   totalRow.appendChild(totalRowData);
   target.appendChild(totalRow);
-  totalRowData.textContent = this.total;
+ 
 };
 
 
@@ -123,17 +124,9 @@ function initializeCart() {
 initializeCart();
 
 
-
-
-
-//TUES TASKS
-// I worked on adding table rows using loop
-// instianted istances of object so that the renderCart had something to render
-// Added in final totals row
-// did math (price * quantity) to produce subtotal
-// did math to produce grand total
-//appended total to totals row
-// created a subtotals row and td
-// add subtotal as content
-//append to the the subtotal td
+function toDollars(amount) {
+  var string = '$' + amount + '.00';
+  console.log(string);
+  return string;
+}
 
