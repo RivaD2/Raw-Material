@@ -119,9 +119,11 @@ button:hover {
   font-weight: bold;
   margin-left: 70px;
 }
+
+.total {
+ padding-left: 25px;
+}
 #cartHeader {
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 110px;
-  position: relative;
+background-size:cover;
+margin: 0 auto;
 }
