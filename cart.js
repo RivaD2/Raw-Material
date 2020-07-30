@@ -82,7 +82,7 @@ Cart.prototype.renderCart = function() {
     var displayedImage = document.createElement('td');
     var itemImage = document.createElement('img');
     itemImage.src = this.cartItems[i].src;
-    itemImage.alt = this.cartItems[i].name; 
+    itemImage.alt = this.cartItems[i].name;
     // added class to itemImage so we can style images on cart.html
     itemImage.setAttribute('class', 'cartImage');
     displayedImage.appendChild(itemImage);
@@ -111,7 +111,8 @@ Cart.prototype.renderCart = function() {
 
   var totalRow = document.createElement('tr');
   var totalRowData = document.createElement('td');
-  totalRowData.textContent = toDollars(this.total);
+  totalRowData.textContent = 'Total ' + toDollars(this.total);
+  totalRowData.setAttribute('class','total');
   totalRow.appendChild(totalRowData);
   target.appendChild(totalRow);
 };
