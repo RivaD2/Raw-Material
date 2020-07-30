@@ -107,10 +107,26 @@ Cart.prototype.renderCart = function() {
   target.appendChild(totalRow);
   totalRowData.textContent = this.total;
 };
-// will need to call render product
 
 
-
+function initializeCart() {
+  var theCart = new Cart();
+  var storedProducts = localStorage.getItem('rawMaterials');
+  if(storedProducts !== null) {
+    var parsedProducts = JSON.parse(storedProducts); // extracted properties of object so we can send to constructor
+    for(var i = 0; i < parsedProducts.length; i++) {
+      var name = parsedProducts[i].name;
+      var quantity = parsedProducts[i].quantity;
+      var src = parsedProducts[i].src;
+      var price = parsedProducts[i].price;
+      theCart.addItem(name, src, price, quantity);
+    }
+    //console.log(parsedProducts);
+    console.log(theCart);
+    theCart.renderCart();
+  }
+}
+initializeCart();
 
 
 

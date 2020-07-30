@@ -4,14 +4,6 @@
 
 var rawMaterialArray = [];
 
-// PM TASKS ON WED
-//added loop to cycle through each product
-// added submit button to each form on index.html
-// created event listener for each addtocart item
-// deleted script tag from cart.html because app.js is meant for index.html
-// created an array to use for LS creation
-
-
 // created 4 loop to iterate through each coffee and tea item
 // set loop to <= 4 since we have 4 of each item and we are starting at one for each
 for(var i = 1; i <= 4; i++) {
@@ -49,3 +41,11 @@ function formHandler(event) {
 
 
 
+// PM TASKS ON WED TO PUT ON PROJECT REPORT # 4
+//added loop to cycle through each product
+// added submit button to each form on index.html
+// created event listener for each addtocart item
+// deleted script tag from cart.html because app.js is meant for index.html
+// created an array to use for LS creation
+// created object literal to push onto rawMaterialArray
+// stored array in Local Storage
