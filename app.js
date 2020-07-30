@@ -49,3 +49,6 @@ function formHandler(event) {
 // created an array to use for LS creation
 // created object literal to push onto rawMaterialArray
 // stored array in Local Storage
+// created initalize cart function, added class using setAttribute to img in cart.html
+// pulled cart from LS and parsed/intialized objects
+
