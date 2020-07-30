@@ -2,18 +2,25 @@
 
 //in index.html link cart.js first before app.js
 
+var rawMaterialArray = [];
 
-//create instance of cart here
-// when we call addItem, a new object will be created
-var userCart = new Cart();
-userCart.addItem('coffeeOne', 100, 3);
-userCart.addItem('greenTea',50,1);
-userCart.renderCart();
+// PM TASKS ON WED
+//added loop to cycle through each product
+// added submit button to each form on index.html
+// created event listener for each addtocart item
+// deleted script tag from cart.html because app.js is meant for index.html
+// created an array to use for LS creation
 
 
-
-var tea_1 = document.getElementById('tea-1');
-tea_1.addEventListener('submit', formHandler);
+// created 4 loop to iterate through each coffee and tea item
+// set loop to <= 4 since we have 4 of each item and we are starting at one for each
+for(var i = 1; i <= 4; i++) {
+  var tea_1 = document.getElementById('tea-' + i);
+  tea_1.addEventListener('submit', formHandler);
+  console.log('addedTea', tea_1);
+  var coffee_1 = document.getElementById('coffee-' + i);
+  coffee_1.addEventListener('submit', formHandler);
+}
 
 function formHandler(event) {
   event.preventDefault();
@@ -22,15 +29,23 @@ function formHandler(event) {
   var quantity = event.target['qty'].value;
   var price = event.target['price'].value;
   var src = event.target['src'].value;
-  // need to call add item to cart function
-  // want to save cart to local storage
   console.log(name, quantity,price, src);
+  // due to time constraints, created obj literal instead of importing cart class
+  // created an array and pushed the object literal on to material array (empty array of products)
+  // Saved the array to LS just like in BusMall
+  var productData = {
+    name: name,
+    quantity: quantity,
+    price:price,
+    src:src
+  };
+  rawMaterialArray.push(productData);
+  var rawMaterialArrayString = JSON.stringify(rawMaterialArray);
+  localStorage.setItem('rawMaterials', rawMaterialArrayString); 
+  console.log(rawMaterialArray.length + ' items in Cart'); // the number of items in the cart is here
 }
 
 
-
-var tea_2 = document.getElementById('tea-2');
-tea_2.addEventListener('submit', formHandler);
 
 
 
