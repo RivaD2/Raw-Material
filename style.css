@@ -114,7 +114,22 @@ button:hover {
 }
 
 .cartImage{
-  width: 250px;
   height: 250px;
-  margin: 0 auto;
+  width: 250px;
+  font-weight: bold;
+  margin-left: 70px;
+}
+
+.total {
+ font-size: 15px;
+ font-weight: bold;
+ text-align: right;
+}
+#cartHeader {
+background-size:cover;
+margin: 0 auto;
+}
+
+#upperNavLinks {
+  width: 200px;
 }

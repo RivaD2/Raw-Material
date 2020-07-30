@@ -11,7 +11,7 @@ for(var i = 1; i <= 4; i++) {
   console.log('addedTea', tea_1);
   var coffee_1 = document.getElementById('coffee-' + i);
   coffee_1.addEventListener('submit', formHandler);
-};
+}
 
 function formHandler(event) {
   event.preventDefault();
@@ -32,15 +32,14 @@ function formHandler(event) {
   };
   rawMaterialArray.push(productData);
   saveToLocalStorage(rawMaterialArray);
-};
+}
 
 // Needed to pull this out of the handler as a single responsibility principal so I could use it on the remove items function
 function saveToLocalStorage(productDataArray) {
   var rawMaterialArrayString = JSON.stringify(productDataArray);
   localStorage.setItem('rawMaterials', rawMaterialArrayString); 
   console.log(productDataArray.length + ' items in Cart'); // the number of items in the cart is here
-};
-  
+}
 
 
 
