@@ -114,7 +114,14 @@ button:hover {
 }
 
 .cartImage{
-  width: 250px;
   height: 250px;
-  margin: 0 auto;
+  width: 250px;
+  font-weight: bold;
+  margin-left: 70px;
+}
+#cartHeader {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 110px;
+  position: relative;
 }
