@@ -110,5 +110,20 @@ button:hover {
 }
 
 #qty {
-  margin-bottom: 12px;;
+  margin-bottom: 12px;
+}
+
+.cartImage{
+  height: 250px;
+  width: 250px;
+  font-weight: bold;
+  margin-left: 70px;
+}
+
+.total {
+ padding-left: 25px;
+}
+#cartHeader {
+background-size:cover;
+margin: 0 auto;
 }

@@ -19,8 +19,8 @@
     - Do all math in the lop where price and quantity exist*/
 
 
-//Ask Mike to add this id cartItemList to table TODO:
-// Ask Mike to move input out of table
+
+
 
 // Global vars
 // created global var for cart so when eventhandler is used to remove items, it can remove them
@@ -83,7 +83,6 @@ Cart.prototype.renderCart = function() {
     var itemImage = document.createElement('img');
     itemImage.src = this.cartItems[i].src;
     itemImage.alt = this.cartItems[i].name;
-    
     // added class to itemImage so we can style images on cart.html
     itemImage.setAttribute('class', 'cartImage');
     displayedImage.appendChild(itemImage);
@@ -100,7 +99,6 @@ Cart.prototype.renderCart = function() {
     var subtotalsRowData = document.createElement('td');
     subtotalsRowData.textContent = toDollars(subtotal);
     cartItemHome.appendChild(subtotalsRowData);
-    
     var removeBtnCell = document.createElement('td');
     var removeBtnInput = document.createElement('input');
     removeBtnInput.value = 'Remove';
@@ -108,16 +106,15 @@ Cart.prototype.renderCart = function() {
     removeBtnCell.appendChild(removeBtnInput);
     cartItemHome.appendChild(removeBtnCell);
     removeBtnInput.addEventListener('click', removeProductFromCart);
-    
     target.appendChild(cartItemHome);
   }
 
   var totalRow = document.createElement('tr');
   var totalRowData = document.createElement('td');
-  totalRowData.textContent = toDollars(this.total);
+  totalRowData.textContent = 'Total ' + toDollars(this.total);
+  totalRowData.setAttribute('class','total');
   totalRow.appendChild(totalRowData);
   target.appendChild(totalRow);
- 
 };
 
 
@@ -149,14 +146,14 @@ function saveToLocalStorage(productDataArray) {
   var rawMaterialArrayString = JSON.stringify(productDataArray);
   localStorage.setItem('rawMaterials', rawMaterialArrayString); 
   console.log(productDataArray.length + ' items in Cart'); // the number of items in the cart is here
-};
+}
 
 
 function toDollars(amount) {
   var string = '$' + amount + '.00';
   console.log(string);
   return string;
-};
+}
 
 
 function removeProductFromCart(event) {
@@ -166,7 +163,7 @@ function removeProductFromCart(event) {
   theCart.removeItem(name);
   saveToLocalStorage(theCart.cartItems);
   theCart.renderCart();
-};
+}
 
 
 
