@@ -117,14 +117,15 @@ button:hover {
   height: 250px;
   width: 250px;
   font-weight: bold;
-  margin-left: 70px;
 }
 
 .total {
- font-size: 15px;
+ font-size: 2rem;
  font-weight: bold;
- text-align: right;
+ text-align: left;
+ padding-bottom: 50px;
 }
+
 #cartHeader {
 background-size:cover;
 margin: 0 auto;
@@ -132,4 +133,11 @@ margin: 0 auto;
 
 #upperNavLinks {
   width: 200px;
+}
+
+#pageTitle {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 50px;
 }

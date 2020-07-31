@@ -13,36 +13,33 @@ td {
 }
 
 html nav #upper-nav-links {
-position: relative;
-left: 950px;
-top: 15px;
-text-decoration: none;
-font-size: 1.5rem;
-background-color: rgb(121, 119, 119);
-color: white;
-
+  position: relative;
+  left: 950px;
+  top: 15px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: rgb(121, 119, 119);
+  color: white;
 }
 
 footer {
   background-color: rgb(121, 119, 119);
   height: 200px;
-
-
 }
+
 #lower-links a{
   color: white;
 }
 
 #icons {
-padding: 25px;
-position: relative;
-left: 75px;
-border-radius: 50%;
-
-
+  padding: 25px;
+  position: relative;
+  left: 75px;
+  border-radius: 50%;
 }
 
- #logo img{
+ 
+#logo img{
   border-radius: 50%;
   position: relative;
   bottom: 150px;
@@ -76,8 +73,8 @@ nav > ul > li {
 html nav a {
   background-color: rgb(121, 119, 119);
   color: white;
-  width: auto;
-  height: 90px;
+  width: 100px;
+  height: 70px;
   float: left;
   padding-left: 10px;
   padding-right: 10px;
@@ -87,4 +84,8 @@ html nav a {
   /* padding: 20px 30px 10px 30px; */
   text-decoration: none;
   font-size: 1.5rem;
+}
+
+#header {
+  width: auto;
 }
