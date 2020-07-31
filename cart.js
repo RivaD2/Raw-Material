@@ -88,7 +88,7 @@ Cart.prototype.renderCart = function() {
     displayedImage.appendChild(itemImage);
     cartItemHome.appendChild(displayedImage);
     var displayedName = document.createElement('td');
-    displayedName.textContent = 'Item: ' + this.cartItems[i].name;
+    displayedName.textContent = this.cartItems[i].name;
     cartItemHome.appendChild(displayedName);
     var displayedPrice = document.createElement('td');
     displayedPrice.textContent = '$' + this.cartItems[i].price;
