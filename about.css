@@ -102,3 +102,7 @@ main {
   tr {
     height: 75px;
   }
+
+  .linkdIn {
+    background-color:  lightgray;
+  }
