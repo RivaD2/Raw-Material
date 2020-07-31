@@ -91,10 +91,10 @@ Cart.prototype.renderCart = function() {
     displayedName.textContent = this.cartItems[i].name;
     cartItemHome.appendChild(displayedName);
     var displayedPrice = document.createElement('td');
-    displayedPrice.textContent = this.cartItems[i].price;
+    displayedPrice.textContent = '$' + this.cartItems[i].price;
     cartItemHome.appendChild(displayedPrice);
     var displayedQuantity = document.createElement('td');
-    displayedQuantity.textContent = this.cartItems[i].quantity;
+    displayedQuantity.textContent = 'Qty: ' + this.cartItems[i].quantity;
     cartItemHome.appendChild(displayedQuantity);
     var subtotalsRowData = document.createElement('td');
     subtotalsRowData.textContent = toDollars(subtotal);
