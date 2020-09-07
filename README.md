@@ -16,6 +16,8 @@ People who don’t live near city centers with h-q products can now have access 
 * **Minimum MVP definition**: 
 Choose an Item & Quantity and Add it to the Cart page. There will be a Home page, About Us page, and Cart page.
 
+**This site involved utilizing local storage to save selected items into a cart and remove them**
+
 ## Prep #4 Submission Material:
 **User Story** [Document](https://docs.google.com/document/d/18TixREggzuGIxyQyo6WZcehCL3ZEarPad4qJFKoxNvk/edit)  
 
