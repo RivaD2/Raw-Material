@@ -1,8 +1,4 @@
 #Raw a {
-  position: relative;
-  top: 60px;
-  left: 90px;
-  width: 220px;
   font-size: 2rem;
   color: white;
   text-decoration: none;
@@ -13,12 +9,8 @@ td {
 }
 
 html nav #upper-nav-links {
-  position: relative;
-  left: 950px;
-  top: 15px;
   text-decoration: none;
   font-size: 1.5rem;
-  background-color: rgb(121, 119, 119);
   color: white;
 }
 
